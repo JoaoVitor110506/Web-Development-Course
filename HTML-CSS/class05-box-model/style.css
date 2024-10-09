@@ -1,0 +1,46 @@
+.logoInstagram {
+  width: 360px;
+  height: 360px;
+  background: linear-gradient(
+    130deg,
+    #6559ca,
+    #bc318f 30%,
+    #e33f5f 50%,
+    #f77638 70%,
+    #fec66d 90%
+  );
+  border-radius: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.square {
+  height: 240px;
+  width: 240px;
+  border: 24px solid white;
+  border-radius: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 0px;
+}
+.circle {
+  height: 120px;
+  width: 120px;
+  border: 24px solid white;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  height: 32px;
+  width: 32px;
+  background-color: white;
+  border-radius: 100%;
+  position: absolute;
+  top: 22px;
+  right: 24px;
+}

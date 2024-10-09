@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #a64495;
+  padding: 32px;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+form {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  width: 480px;
+}
+fieldset {
+  border: none;
+  & legend {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #a63292;
+  }
+}
+section {
+  margin-top: 24px;
+}
+input,
+select,
+textarea {
+  accent-color: #a64495;
+  width: 100%;
+  height: 42px;
+  border-radius: 8px;
+  border: none;
+  outline: 1.5px solid #d9a7cb;
+  padding: 8px 16px;
+  font-size: 16px;
+  &:focus {
+    outline: 1.5px solid #a64495;
+  }
+}
+label {
+  line-height: 32px;
+}
+.boxBirthPhone {
+  display: flex;
+  gap: 24px;
+}
+.boxShift {
+  & fieldset {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  & span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  & legend {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+  }
+  & input {
+    outline: transparent;
+    width: 16px;
+    height: 16px;
+
+    &:focus {
+      outline: 1.5px solid #a64495;
+    }
+  }
+}
