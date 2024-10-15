@@ -45,3 +45,4 @@ console.log(pokemon);
 console.log(pokemon[0]);
 console.log(pokemon[1].name);
 console.log(pokemon[2].level);
+
