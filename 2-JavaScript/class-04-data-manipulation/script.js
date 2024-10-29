@@ -30,7 +30,7 @@ console.log(Math.abs(num2));
 console.log(Math.trunc(num2));
 console.log(Math.round(5.5));
 console.log(Math.ceil(5.001));
-console.log(Math.floor(5.999));
+console.log(Math.floor(5.999)); //**//
 
 console.log(Math.random());
 console.log(Math.ceil(Math.random() * 100)); //sortear do 1 até o 100
@@ -45,3 +45,31 @@ const times = [
 ];
 const randomNumber = Math.ceil(Math.floor() * times.length);
 console.log(times[randomNumber]);
+
+//array
+const city = ["Tiazinha", "Rambo", "Bolzo", "Paola Oliveira", "Marina Rui"];
+console.log(city.length);
+console.log(city[1]);
+city[0] = "Feiticeira";
+console.log(city);
+
+let a = "joão Vitor";
+a[1] = "M"; // string is immutable!
+console.log(a);
+
+console.log(city.join(" - "));
+console.log("Bem vindo à aula".replaceAll(" ", "-"));
+
+console.log(city.includes("Rambo"));
+
+console.log("João Vitor de Souza Pereira".split(" ")[1]);
+console.log(city.reverse());
+console.log("João".split("").reverse().join(""));
+
+//contar palavras
+function wordCount(text) {
+  //contar
+  const count = text.split(" ").length;
+  return count;
+}
+console.log(wordCount("João Vitor de Souza Pereira"));
