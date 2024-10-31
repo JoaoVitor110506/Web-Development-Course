@@ -116,3 +116,22 @@ console.log((dateNow - birthday) / 1000 / 60 / 60 / 24 / 365.25);
 console.log(dateNow.getFullYear());
 console.log(birthday.getFullYear());
 console.log(dateNow.getFullYear() - birthday.getFullYear());
+
+//desafio 2
+
+const newYear = new Date("2025-01-01 00:00:00");
+const dateCurrent = new Date();
+console.log((newYear - dateCurrent) / 1000 / 60 / 60 / 24);
+console.log(dateCurrent.getFullYear());
+console.log(newYear.getFullYear());
+console.log(newYear.getFullYear() - dateCurrent.getFullYear());
+
+//desafio 1
+function isPalindrome(text) {
+  // Reverte a palavra e verifica se é igual à original
+  const original = text.replaceAll(" ", "").toLocaleLowerCase();
+  const reverse = original.split("").reverse().join("");
+  return original == reverse;
+}
+
+console.log(isPalindrome("A torre da derrota"));
