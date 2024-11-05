@@ -33,3 +33,17 @@ for (let i = 0; i < students.length; i++) {
 }
 
 console.log("End!");
+//desafio
+const numbers = [];
+
+while (numbers.length < 6) {
+  const draw = Math.ceil(Math.random() * 60);
+  const numberFormatted = String(draw).padStart(2, 0);
+
+  if (numbers.includes(numberFormatted)) {
+    continue;
+  } else {
+    numbers.push(numberFormatted);
+  }
+}
+console.log(numbers.sort((a, b) => a - b).join("-"));
