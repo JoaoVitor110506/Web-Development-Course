@@ -67,3 +67,4 @@ console.log(numbers2);
 const expenses = [20, 32, 38, 220, 50, 100];
 const total = expenses.reduce((a, b) => a + b, 1000);
 console.log(total);
+ 
