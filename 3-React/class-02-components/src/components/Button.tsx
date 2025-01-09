@@ -3,10 +3,10 @@ type Props = {
     color?: string;
 }
 
-export function Button({title, color}): Props {
+export function Button({title, color}: Props ) {
     return (
         <>
-        <button style ={{ backgroundColor: `${color}`}}>{title} </button>
+        <button style ={{ backgroundColor: `${color}`}}> {title} </button>
         </>
     );
 }
